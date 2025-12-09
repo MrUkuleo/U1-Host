@@ -1,7 +1,32 @@
+/* --------- GLOBAL --------- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+button {
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
+  background: blue;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkblue;
+}
+
+/* --------- HEADER --------- */
 header {
   position: sticky;
   top: 0;
@@ -9,12 +34,12 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+  background: #fff;
 }
 
 header ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
   margin-top: 25px;
 }
 
@@ -24,35 +49,17 @@ header li {
 
 header h2 {
   color: blue;
-  margin: 0%;
+  margin: 0;
   font-size: 25px;
 }
 
-button {
-  font-size: 16px;
-  width: 100px;
-  height: 50px;
-  background-color: blue;
-  border-color: transparent;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-button:hover{
-  background-color: darkblue;
-}
-
-a {
-  color: lightgray;
-  text-decoration: none;
-}
-
+/* --------- SHOWCASE --------- */
 .showcase {
-  background-color: rgb(1, 90, 224);
+  background: rgb(1, 90, 224);
   display: flex;
   justify-content: space-evenly;
-  height: 700px;
   align-items: center;
+  height: 700px;
 }
 
 .showcase img {
@@ -61,9 +68,8 @@ a {
 }
 
 .showCaseText {
-  margin-bottom: 250px;
   width: 370px;
-  margin-top: 200px;
+  margin: 200px 0 250px;
   font-size: larger;
 }
 
@@ -72,49 +78,47 @@ a {
 }
 
 .showcase button {
-  border-color: transparent;
-  background-color: rgb(33, 33, 36);
+  background: rgb(33, 33, 36);
   border-radius: 5px;
   font-size: large;
   width: 200px;
   height: 50px;
-  cursor: pointer;
 }
 
-.card {
-  background-color: whitesmoke;
-  width: 450px;
-  height: 250px;
-  margin-bottom: 25px;
-  margin-left: 25px;
-  border-radius: 15px;
-  text-align: center;
-  align-items:end;
-}
-
-.card:hover {
-  border-top: 3px darkblue solid;
-  height: 245px;
-}
-
+/* --------- CARDS --------- */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 475px));
-  padding: 10px;
+  padding: 10px 10px 150px;
   justify-content: center;
-  padding-bottom: 150px;
+}
+
+.card {
+  background: whitesmoke;
+  width: 450px;
+  height: 250px;
+  margin: 0 0 25px 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card:hover {
+  border-top: 3px solid darkblue;
+  height: 245px;
 }
 
 .icon {
   margin-top: 25px;
 }
 
+/* --------- HEADINGS --------- */
 .heading-text {
   font-size: 52px;
   margin-left: 240px;
   padding-top: 80px;
 }
 
+/* --------- SYSTEMS --------- */
 .systems h1 {
   margin-left: 100px;
 }
@@ -127,47 +131,44 @@ a {
 
 .os {
   display: flex;
-  border: 1px grey solid;
+  border: 1px solid grey;
   border-radius: 15px;
   width: 450px;
   margin-bottom: 50px;
 }
 
+.os:hover {
+  background: lightblue;
+  border-color: darkblue;
+}
+
 .icon-os {
-  margin-top: 30px;
-  padding-left: 10px;
-  margin-right: 50px;
   width: 40px;
+  margin: 30px 50px 0 10px;
 }
 
-.country-gpu {
-  display: flex;
-  margin-right: 400px;
-}
-
-
+/* --------- SELECTORS --------- */
 .selectors {
   display: flex;
   justify-content: space-around;
 }
 
 .selector {
-  display: block;
   width: 200px;
-  margin-right: 10px;
 }
 
 .selector label {
   color: blue;
 }
 
-.selector select{
+.selector select {
   width: 200px;
   height: 50px;
 }
 
+/* --------- SERVER BLOCKS --------- */
 .services, .choose {
-  background-color: whitesmoke;
+  background: whitesmoke;
 }
 
 .servers {
@@ -178,19 +179,15 @@ a {
 .server {
   display: flex;
   justify-content: space-around;
-  background-color: white;
+  background: #fff;
   width: 80%;
   border-radius: 15px;
-  margin: auto;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 }
 
-.os:hover {
-  background-color: lightblue;
-  border-color: darkblue;
-}
-
-.server h1, .server h2, .server button {
+.server h1,
+.server h2,
+.server button {
   margin-top: 50px;
 }
 
@@ -202,25 +199,25 @@ a {
   margin: 25px;
 }
 
+/* --------- QUESTIONS --------- */
 .question {
   cursor: pointer;
   user-select: none;
-  background-color: whitesmoke;
+  background: whitesmoke;
   width: 80%;
-  margin: auto;
+  margin: 0 auto 25px;
   padding: 5px;
-  margin-bottom: 25px;
   border-radius: 15px;
-  align-items: center;
 }
 
 .questions {
   margin-bottom: 170px;
 }
 
+/* --------- FOOTER --------- */
 .footer {
   padding-top: 50px;
-  background-color: rgb(1, 90, 224);
+  background: rgb(1, 90, 224);
   width: 100%;
 }
 
@@ -229,9 +226,9 @@ a {
 }
 
 .footer li {
-  list-style-type: none;
-  text-align: left;
+  list-style: none;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .columns {
@@ -242,4 +239,178 @@ a {
 #copyright {
   padding-top: 100px;
   text-align: center;
+}
+
+/* --------- MEDIA QUERIES --------- */
+/* 1200px */
+@media (max-width: 1200px) {
+  .heading-text {
+    font-size: 42px;
+    margin-left: 120px;
+  }
+  .showcase {
+    height: 600px;
+  }
+  .showcase img {
+    width: 400px;
+    height: 240px;
+  }
+  .showCaseText {
+    width: 320px;
+    margin-bottom: 200px;
+  }
+  .server {
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  header li {
+    margin: 0 15px 10px 0;
+  }
+
+  .showcase {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .showCaseText {
+    width: 90%;
+    margin: 0 0 40px;
+    text-align: center;
+  }
+
+  .cards, .os-s {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+    padding: 10px 20px;
+  }
+
+  .card, .os {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .selectors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .server {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .server h1, .server h2, .server button {
+    margin-top: 20px;
+  }
+
+  .columns {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+
+  header h2 { font-size: 22px; }
+  header li { font-size: 14px; }
+
+  button {
+    font-size: 14px;
+    width: 90px;
+    height: 45px;
+  }
+
+  .heading-text {
+    font-size: 28px;
+    margin-left: 10px;
+    padding-top: 40px;
+  }
+
+  .cards, .os-s {
+    grid-template-columns: 1fr;
+  }
+
+  .card, .os {
+    width: 90%;
+  }
+
+  .question {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .selector select {
+    width: 180px;
+    height: 45px;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading-text {
+    font-size: 22px;
+    margin-left: 5px;
+  }
+
+  .showcase button {
+    width: 100%;
+  }
+
+  .card, .server, .os {
+    width: 95%;
+  }
+
+  .selector {
+    width: 90%;
+  }
+
+  .selector select {
+    width: 100%;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer h3 {
+    font-size: 16px;
+  }
+
+  #copyright {
+    padding-top: 50px;
+    font-size: 12px;
+  }
 }
