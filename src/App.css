@@ -159,7 +159,9 @@ header h2 {
 /* --------- SELECTORS --------- */
 .selectors {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
 }
 
 .country-cpu {
@@ -194,7 +196,7 @@ header h2 {
   display: flex;
   justify-content: space-around;
   background: #fff;
-  width: 80%;
+  width: 75%;
   border-radius: 15px;
   margin: 0 auto 15px;
 }
@@ -234,7 +236,7 @@ header h2 {
   background: rgb(1, 90, 224);
   color: white;
   width: 100%;
-  box-sizing: border-box;
+  margin: 0;
 }
 
 .footer h3 {
@@ -254,8 +256,9 @@ header h2 {
 
 #copyright {
   padding-top: 100px;
-  padding-bottom: 0%;
   text-align: center;
+  margin: 0;
+  padding: 20px 0;
 }
 
 /* --------- MEDIA QUERIES --------- */
