@@ -1,0 +1,234 @@
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+header li {
+  margin-right: 25px;
+}
+
+header h2 {
+  color: blue;
+  margin: 0%;
+  font-size: 25px;
+}
+
+button {
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+  border-color: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: darkblue;
+}
+
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+.showcase {
+  background-color: rgb(1, 90, 224);
+  display: flex;
+  justify-content: space-evenly;
+  height: 700px;
+  align-items: center;
+}
+
+.showcase img {
+  width: 500px;
+  height: 300px;
+}
+
+.showCaseText {
+  margin-bottom: 250px;
+  width: 370px;
+  margin-top: 200px;
+  font-size: larger;
+}
+
+.showcase p {
+  color: rgb(159, 167, 197);
+}
+
+.showcase button {
+  border-color: transparent;
+  background-color: rgb(33, 33, 36);
+  border-radius: 5px;
+  font-size: large;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: whitesmoke;
+  width: 450px;
+  height: 250px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  border-radius: 15px;
+  text-align: center;
+  align-items:end;
+}
+
+.card:hover {
+  border-top: 3px darkblue solid;
+  height: 245px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 475px));
+  padding: 10px;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+.icon {
+  margin-top: 25px;
+}
+
+.heading-text {
+  font-size: 52px;
+  margin-left: 240px;
+  padding-top: 80px;
+}
+
+.systems h1 {
+  margin-left: 100px;
+}
+
+.os-s {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 500px));
+  justify-content: center;
+}
+
+.os {
+  display: flex;
+  border: 1px grey solid;
+  border-radius: 15px;
+  width: 450px;
+  margin-bottom: 50px;
+}
+
+.icon-os {
+  margin-top: 30px;
+  padding-left: 10px;
+  margin-right: 50px;
+  width: 40px;
+}
+
+.country-gpu {
+  display: flex;
+  margin-right: 400px;
+}
+
+
+.selectors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selector {
+  display: block;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.selector label {
+  color: blue;
+}
+
+.selector select{
+  width: 200px;
+  height: 50px;
+}
+
+.services, .choose {
+  background-color: whitesmoke;
+}
+
+.servers {
+  margin-top: 75px;
+  padding-bottom: 250px;
+}
+
+.server {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 1500px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.os:hover {
+  background-color: lightblue;
+  border-color: darkblue;
+}
+
+.server h1, .server h2, .server button {
+  margin-top: 50px;
+}
+
+.server-icon {
+  margin-top: 20px;
+}
+
+.chara {
+  margin: 25px;
+}
+
+.question {
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer {
+  padding-top: 50px;
+  background-color: rgb(1, 90, 224);
+  width: 100%;
+}
+
+.footer h3 {
+  margin-left: 40px;
+}
+
+.footer li {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#copyright {
+  padding-top: 100px;
+  text-align: center;
+}
