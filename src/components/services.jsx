@@ -77,7 +77,7 @@ function Services()
                 <h1 className="heading-text" id="vps-servers">Облачные VPS серверы</h1>
 
                 <div className="selectors">
-                    <div className="country-gpu">
+                    <div className="country-cpu">
                         <div className="selector">
                             <label>Страна</label>
                             <select>

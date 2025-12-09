@@ -10,7 +10,7 @@ function FAQ() {
 
   return (
     <div className="faq">
-      <h1 className="heading-text" id="FAQ">Часто задаваемые вопросы</h1>
+      <h1 className="heading-text" id="faq">Часто задаваемые вопросы</h1>
       <div className="questions">
         <div className="question">
           <h3 onClick={toggleAnswer}>Предоставляете ли вы скидки?</h3>
