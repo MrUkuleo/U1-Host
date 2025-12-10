@@ -55,7 +55,7 @@ function Systems() {
     return(
         <>
             <div className="systems">
-            <h1 class="heading-text">Доступные операционные системы</h1>
+            <h1 className="heading-text">Доступные операционные системы</h1>
             <div className="os-s">
               {OSData.map((os, index) => (
                 <OS 
